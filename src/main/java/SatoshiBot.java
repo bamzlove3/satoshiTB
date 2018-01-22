@@ -1,6 +1,5 @@
 import org.telegram.telegrambots.api.methods.send.SendMessage;
 import org.telegram.telegrambots.api.objects.Update;
-import org.telegram.telegrambots.api.objects.User;
 import org.telegram.telegrambots.bots.TelegramLongPollingBot;
 import org.telegram.telegrambots.exceptions.TelegramApiException;
 import parametrs.Var;
@@ -8,7 +7,7 @@ import parametrs.Var;
 public class SatoshiBot extends TelegramLongPollingBot {
     public void onUpdateReceived(Update update) {
         if (update.hasMessage() && update.getMessage().hasText()) {
-            // Set variables
+            //my class for messegee;
             Mess m = new Mess(update);
 
             SendMessage message = new SendMessage() // Create a message object object
